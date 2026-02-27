@@ -11,9 +11,9 @@ canonical: https://yyqiu35000.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
+github_link: https://github.com/yyqiu35000
 # google_scholar: https://scholar.google.com/
 # cv_link: assets/files/curriculum_vitae.pdf
-# github_link: https://github.com/
 # linkedin: https://www.linkedin.com/
 # twitter: https://twitter.com/
 
@@ -34,6 +34,10 @@ auto_dark_mode: true
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
 font: "Sans Serif" # or "Serif"
+
+# Blog settings
+permalink: /blog/:year/:month/:day/:title/
+show_excerpts: true
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
