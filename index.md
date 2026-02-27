@@ -19,6 +19,8 @@ layout: homepage
 - **Reinforcement Learning:** Multi-Armed Bandits, Agent-based Systems
 - **Machine Learning Systems:** RAG Architecture, Model Training Optimization
 - **Natural Language Processing:** Large Language Model Optimization
+
+
 ## News
 
 - **[2025.09-2026.01]** 完成基于Pythia-2.8B的StreamingLLM优化项目
@@ -26,9 +28,15 @@ layout: homepage
 - **[2025.01-2025.04]** 参与基于混合搜索的知识问答后端工程化项目
 - **[2024.07-2025.01]** 参与文档版式识别技术研究工程化项目
 
-{% include_relative _includes/publications.md %}
 
-{% include_relative _includes/services.md %}
+## Publications
+
+<p style="color: #888; font-style: italic;">论文投稿中...</p>
+
+## Blog Posts
+
+<p style="color: #888; font-style: italic;">技术博客筹备中,敬请期待...</p>
+<!-- {% include_relative _includes/blog.md %} -->
 
 ## Technical Skills
 
@@ -38,4 +46,4 @@ layout: homepage
 - **工程技能**: RAG架构, 模型训练优化, 全栈开发
 - **编程语言**: Python, JavaScript
 
-{% include_relative _includes/services.md %}
+{% include_relative _includes/projects.md %}
