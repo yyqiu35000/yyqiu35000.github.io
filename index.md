@@ -33,10 +33,8 @@ layout: homepage
 
 <p style="color: #888; font-style: italic;">论文投稿中...</p>
 
-## Blog Posts
 
-<p style="color: #888; font-style: italic;">技术博客筹备中,敬请期待...</p>
-<!-- {% include_relative _includes/blog.md %} -->
+{% include_relative _includes/blog.md %}
 
 ## Technical Skills
 
