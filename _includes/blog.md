@@ -1,4 +1,4 @@
-<h2 id="blog" style="margin: 2px 0px -15px;">Blog Posts</h2>
+<!-- <h2 id="blog" style="margin: 2px 0px -15px;">Blog Posts</h2>
 
 <div class="publications" style="margin-top: 20px;">
 
@@ -37,6 +37,37 @@
 
 {% else %}
   <p style="color: #888; font-style: italic;">技术博客筹备中,敬请期待...</p>
+{% endif %}
+
+</div> -->
+
+<h2 id="blog" style="margin: 2px 0px -15px;">Blog Posts</h2>
+
+<div class="publications" style="margin-top: 20px;">
+
+<!-- 调试信息 -->
+<p>博客文章数量: {{ site.posts.size }}</p>
+
+{% if site.posts.size > 0 %}
+  <p style="color: green;">✓ 检测到博客文章</p>
+  <ul style="list-style-type: none; padding: 0;">
+  {% for post in site.posts limit:3 %}
+    <li style="margin-bottom: 20px;">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p style="color: #888;">{{ post.date | date: "%Y年%m月%d日" }}</p>
+      <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+      <a href="{{ post.url | relative_url }}">阅读全文 →</a>
+    </li>
+  {% endfor %}
+  </ul>
+  
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="/blog/">查看所有博客 →</a>
+  </div>
+
+{% else %}
+  <p style="color: #888; font-style: italic;">技术博客筹备中,敬请期待...</p>
+  <p style="color: red;">⚠️ 当前没有检测到博客文章</p>
 {% endif %}
 
 </div>
